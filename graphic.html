@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080, initial-scale=1">
+<title>Free Webinar Graphic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#05080f}
+  :root{
+    --ink:#0A1222; --ink-2:#0e1a30; --teal:#0FA896; --teal-bright:#3BE3CE;
+    --amber:#F0A32A; --text:#EAF1FB; --muted:#9FB3D0;
+    --fd:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+    --fb:"IBM Plex Sans",system-ui,sans-serif;
+    --fm:"IBM Plex Mono",monospace;
+  }
+  .stage{width:1080px;height:1350px;position:relative;overflow:hidden;color:var(--text);
+    background:
+      radial-gradient(900px 620px at 88% -8%, rgba(59,227,206,.20), transparent 58%),
+      radial-gradient(760px 520px at -8% 108%, rgba(15,168,150,.18), transparent 55%),
+      var(--ink);
+    font-family:var(--fb);display:flex;flex-direction:column;padding:72px 72px 64px}
+  .stage::after{content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:60px 60px;mask-image:radial-gradient(1200px 900px at 70% 20%,#000,transparent 75%);pointer-events:none}
+  .row{position:relative;z-index:2}
+  .head{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:14px}
+  .brand .mk{width:52px;height:52px;border-radius:13px;background:linear-gradient(140deg,var(--teal),var(--teal-bright));
+    display:grid;place-items:center;color:#042923;font-family:var(--fd);font-weight:800;font-size:30px}
+  .brand b{font-family:var(--fm);font-size:20px;letter-spacing:.02em;color:var(--text)}
+  .badge{display:inline-flex;align-items:center;gap:11px;background:rgba(240,163,42,.14);border:1.5px solid rgba(240,163,42,.5);
+    color:#ffcf86;font-family:var(--fm);font-weight:600;font-size:20px;letter-spacing:.14em;text-transform:uppercase;
+    padding:13px 20px;border-radius:999px}
+  .badge .dot{width:12px;height:12px;border-radius:50%;background:#ff5e57;box-shadow:0 0 0 5px rgba(255,94,87,.25)}
+
+  .hero{margin-top:76px}
+  .eyebrow{font-family:var(--fm);font-size:24px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-bright)}
+  h1{font-family:var(--fd);font-weight:800;font-size:112px;line-height:.98;letter-spacing:-.03em;margin-top:22px}
+  h1 .t{color:var(--teal-bright)}
+  .sub{font-size:33px;line-height:1.45;color:var(--muted);margin-top:30px;max-width:850px}
+
+  .datecard{margin-top:54px;display:flex;align-items:center;gap:30px;background:rgba(15,168,150,.12);
+    border:2px solid rgba(59,227,206,.45);border-radius:22px;padding:30px 38px}
+  .datecard .cal{flex:none;width:92px;height:92px;border-radius:16px;background:var(--teal-bright);color:#042923;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--fd);line-height:1}
+  .datecard .cal .d{font-size:46px;font-weight:800}
+  .datecard .cal .m{font-size:21px;font-weight:700;letter-spacing:.08em;margin-top:3px}
+  .datecard .when b{font-family:var(--fd);font-size:40px;font-weight:800;letter-spacing:-.01em;display:block}
+  .datecard .when span{font-family:var(--fm);font-size:24px;color:var(--teal-bright);letter-spacing:.04em;display:block;margin-top:7px}
+
+  .learn{margin-top:50px}
+  .learn .lab{font-family:var(--fm);font-size:22px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .learn ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:20px}
+  .learn li{display:flex;align-items:flex-start;gap:20px;font-size:31px;line-height:1.3}
+  .learn .ck{flex:none;width:42px;height:42px;border-radius:11px;background:var(--teal);display:grid;place-items:center;margin-top:2px}
+
+  .spacer{flex:1}
+  .cta{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;
+    background:linear-gradient(120deg,var(--teal),var(--teal-bright));border-radius:22px;padding:34px 42px;color:#042923}
+  .cta .big{font-family:var(--fd);font-weight:800;font-size:40px;line-height:1.05;letter-spacing:-.01em}
+  .cta .small{font-family:var(--fm);font-size:24px;font-weight:600;margin-top:8px}
+  .cta .arrow{flex:none;font-family:var(--fd);font-weight:800;font-size:54px;white-space:nowrap}
+  .foot{position:relative;z-index:2;margin-top:26px;display:flex;align-items:center;justify-content:space-between;
+    font-family:var(--fm);font-size:22px;color:var(--muted)}
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="row head">
+      <div class="brand"><span class="mk">R</span><b>@revolt_technology</b></div>
+      <span class="badge"><span class="dot"></span>Free live webinar</span>
+    </div>
+
+    <div class="row hero">
+      <p class="eyebrow">Revolt Technology presents</p>
+      <h1>Introduction to <span class="t">Software Testing</span></h1>
+      <p class="sub">Your first real step into a tech career — live, beginner-friendly, with a Q&amp;A.</p>
+    </div>
+
+    <div class="row datecard">
+      <div class="cal"><span class="d">10</span><span class="m">OCT</span></div>
+      <div class="when"><b>Saturday 10 October</b><span>6:00 PM (UK) · Online · Live Q&amp;A</span></div>
+    </div>
+
+    <div class="row learn">
+      <p class="lab">You'll leave knowing</p>
+      <ul>
+        <li><span class="ck"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#042923" stroke-width="3.4"><path d="M4 12l5 5L20 6"/></svg></span>What QA really is — and why it's in demand</li>
+        <li><span class="ck"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#042923" stroke-width="3.4"><path d="M4 12l5 5L20 6"/></svg></span>Manual vs Automation — where to start</li>
+        <li><span class="ck"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#042923" stroke-width="3.4"><path d="M4 12l5 5L20 6"/></svg></span>Exactly how to become job-ready</li>
+      </ul>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="cta">
+      <div><div class="big">Seats are limited — reserve yours FREE</div><div class="small">Takes 30 seconds</div></div>
+      <div class="arrow">Link in<br>bio ➜</div>
+    </div>
+    <div class="foot"><span>revolttechhub.github.io/free-webinar</span><span>@revolt_technology</span></div>
+  </div>
+</body>
+</html>

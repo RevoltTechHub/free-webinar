@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A1222">
+<title>Reserve your seat — Free Intro to Software Testing | Revolt</title>
+<meta name="description" content="Reserve your free seat for Revolt Technology's live Introduction to Software Testing — Saturday 10 October, 6PM UK, online with a Q&A.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ink:#0A1222; --ink-2:#0e1a30; --card:#101d33; --line:rgba(255,255,255,.12);
+    --teal:#0FA896; --teal-bright:#3BE3CE; --amber:#F0A32A; --wa:#22C35E;
+    --text:#EAF1FB; --muted:#9FB3D0;
+    --fd:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+    --fb:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --fm:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:
+      radial-gradient(900px 500px at 90% -10%,rgba(59,227,206,.14),transparent 60%),
+      radial-gradient(700px 420px at -10% 108%,rgba(15,168,150,.12),transparent 55%),
+      var(--ink);
+    color:var(--text);font-family:var(--fb);line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh}
+  .wrap{max-width:960px;margin-inline:auto;padding-inline:20px;padding-block:28px}
+  h1,h2{font-family:var(--fd);font-weight:800;letter-spacing:-.02em;margin:0;text-wrap:balance}
+  p{margin:0}
+  .head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:34px}
+  .brand{display:flex;align-items:center;gap:11px}
+  .brand .mk{width:38px;height:38px;border-radius:10px;background:linear-gradient(140deg,var(--teal),var(--teal-bright));display:grid;place-items:center;color:#042923;font-family:var(--fd);font-weight:800;font-size:1.3rem}
+  .brand b{font-family:var(--fm);font-size:.82rem;color:var(--text)}
+  .badge{display:inline-flex;align-items:center;gap:9px;background:rgba(240,163,42,.14);border:1.5px solid rgba(240,163,42,.5);color:#ffcf86;font-family:var(--fm);font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:9px 14px;border-radius:999px}
+  .badge .dot{width:9px;height:9px;border-radius:50%;background:#ff5e57;box-shadow:0 0 0 4px rgba(255,94,87,.22)}
+
+  .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+  @media (max-width:800px){.grid{grid-template-columns:1fr;gap:28px}}
+
+  .eyebrow{font-family:var(--fm);font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-bright)}
+  h1{font-size:clamp(2.1rem,6vw,3.3rem);line-height:1.02;margin-top:14px}
+  h1 em{font-style:normal;color:var(--teal-bright)}
+  .lede{color:var(--muted);font-size:1.1rem;margin-top:18px;max-width:52ch}
+
+  .when{display:flex;align-items:center;gap:18px;background:rgba(15,168,150,.12);border:1.5px solid rgba(59,227,206,.4);border-radius:16px;padding:18px 20px;margin-top:26px}
+  .when .cal{flex:none;width:64px;height:64px;border-radius:12px;background:var(--teal-bright);color:#042923;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--fd);line-height:1}
+  .when .cal .d{font-size:1.9rem;font-weight:800}.when .cal .m{font-size:.8rem;font-weight:700;letter-spacing:.08em;margin-top:2px}
+  .when b{font-family:var(--fd);font-size:1.25rem;display:block}
+  .when span{font-family:var(--fm);font-size:.9rem;color:var(--teal-bright);display:block;margin-top:5px}
+
+  .learn{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:13px}
+  .learn li{display:flex;gap:13px;align-items:flex-start;font-size:1.05rem}
+  .learn .ck{flex:none;width:26px;height:26px;border-radius:8px;background:var(--teal);display:grid;place-items:center;margin-top:2px}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,30px);box-shadow:0 30px 60px -40px #000}
+  .card h2{font-size:1.5rem}
+  .card .csub{color:var(--muted);font-size:.95rem;margin-top:6px;margin-bottom:20px}
+  .field{display:grid;gap:7px;margin-bottom:15px}
+  label{font-weight:600;font-size:.9rem}
+  label .req{color:var(--teal-bright)}
+  input{font-family:var(--fb);font-size:1rem;color:var(--text);background:#0b1626;border:1.5px solid var(--line);border-radius:11px;padding:13px 14px;width:100%}
+  input:focus{outline:none;border-color:var(--teal-bright);box-shadow:0 0 0 3px rgba(59,227,206,.2)}
+  .err{color:#ff8a80;font-size:.82rem;min-height:1em}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;font-family:var(--fb);font-weight:700;font-size:1.05rem;border:none;cursor:pointer;border-radius:999px;padding:16px 22px;background:var(--teal);color:#042923;box-shadow:0 10px 24px -10px rgba(15,168,150,.7);transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-wa{background:var(--wa);color:#08270f}
+  .foot-note{font-size:.84rem;color:var(--muted);margin-top:12px;text-align:center}
+  .success{display:none;text-align:center}
+  .success .tick{width:64px;height:64px;border-radius:50%;background:rgba(34,195,94,.16);border:2px solid var(--wa);display:grid;place-items:center;margin:0 auto 16px}
+  .success h2{font-size:1.5rem}
+  .success p{color:var(--muted);margin:10px auto 20px;max-width:34ch}
+  .pagefoot{margin-top:40px;text-align:center;font-family:var(--fm);font-size:.8rem;color:var(--muted)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <div class="brand"><span class="mk">R</span><b>@revolt_technology</b></div>
+      <span class="badge"><span class="dot"></span>Free live webinar</span>
+    </div>
+
+    <div class="grid">
+      <div>
+        <p class="eyebrow">Revolt Technology presents</p>
+        <h1>Reserve your free seat: <em>Introduction to Software Testing</em></h1>
+        <p class="lede">A live, beginner-friendly session on how to start a career in Software Testing (QA) — with a Q&amp;A at the end. No experience needed.</p>
+
+        <div class="when">
+          <div class="cal"><span class="d">10</span><span class="m">OCT</span></div>
+          <div><b>Saturday 10 October</b><span>6:00 PM (UK) · Online · Live Q&amp;A</span></div>
+        </div>
+
+        <ul class="learn">
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#042923" stroke-width="3.3"><path d="M4 12l5 5L20 6"/></svg></span>What QA really is — and why it's in demand</li>
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#042923" stroke-width="3.3"><path d="M4 12l5 5L20 6"/></svg></span>Manual vs Automation testing — where to start</li>
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#042923" stroke-width="3.3"><path d="M4 12l5 5L20 6"/></svg></span>Exactly how to become job-ready — and what comes next</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <form id="reserveForm" novalidate>
+          <h2>Reserve my seat</h2>
+          <p class="csub">Seats are limited — takes 30 seconds. Your joining link is sent to you on WhatsApp.</p>
+          <div class="field">
+            <label for="name">Full name <span class="req">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="e.g. Ada Obi">
+            <div class="err" data-for="name"></div>
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com">
+            <div class="err" data-for="email"></div>
+          </div>
+          <div class="field">
+            <label for="phone">WhatsApp number <span class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+44 …">
+            <div class="err" data-for="phone"></div>
+          </div>
+          <button class="btn" type="submit">Reserve my free seat →</button>
+          <p class="foot-note">Free · No experience needed · Live Q&amp;A</p>
+        </form>
+
+        <div class="success" id="success" role="status" aria-live="polite">
+          <div class="tick"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#22C35E" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></div>
+          <h2 id="successTitle">One last step!</h2>
+          <p>Tap below to confirm your seat on WhatsApp — just press send and you're in. We'll send your joining link there.</p>
+          <a class="btn btn-wa" id="waSend" href="https://wa.me/447534938101" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.03c-.25.69-1.45 1.32-1.99 1.37-.53.05-1.02.24-3.45-.72-2.9-1.14-4.75-4.1-4.9-4.29-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.25-.29.55-.36.73-.36l.53.01c.17 0 .4-.06.62.48.25.6.85 2.08.92 2.23.07.14.12.31.02.5-.09.19-.14.31-.28.48l-.42.49c-.14.14-.28.29-.12.57.16.29.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.17-.19.69-.81.87-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.33.07.12.07.69-.18 1.37z"/></svg>
+            Confirm on WhatsApp
+          </a>
+          <p class="foot-note">Didn't open? Message <b>+44 7534 938101</b> to confirm.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="pagefoot">Revolt Technology · Software Testing training &amp; careers · @revolt_technology</p>
+  </div>
+
+<script>
+  (function(){
+    "use strict";
+    var WA="447534938101";
+    var form=document.getElementById("reserveForm"),success=document.getElementById("success"),
+        waSend=document.getElementById("waSend"),successTitle=document.getElementById("successTitle");
+    function setErr(n,m){var e=form.querySelector('.err[data-for="'+n+'"]');if(e)e.textContent=m||"";}
+    function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      var name=form.elements["name"].value.trim(),email=form.elements["email"].value.trim(),phone=form.elements["phone"].value.trim();
+      var ok=true;setErr("name","");setErr("email","");setErr("phone","");
+      if(!name){setErr("name","Please enter your name.");ok=false;}
+      if(!email||!validEmail(email)){setErr("email","Enter a valid email.");ok=false;}
+      if(!phone||phone.replace(/[^0-9]/g,"").length<7){setErr("phone","Enter a number we can reach you on.");ok=false;}
+      if(!ok){var fe=form.querySelector('.err:not(:empty)');if(fe&&fe.previousElementSibling&&fe.previousElementSibling.focus)fe.previousElementSibling.focus();return;}
+      var lines=[
+        "Hi Revolt! I'd like to reserve my seat for the FREE Introduction to Software Testing webinar (Sat 10 Oct, 6PM UK).",
+        "",
+        "Name: "+name,
+        "Email: "+email,
+        "WhatsApp: "+phone
+      ];
+      waSend.setAttribute("href","https://wa.me/"+WA+"?text="+encodeURIComponent(lines.join("\n")));
+      successTitle.textContent="Almost in, "+name.split(" ")[0]+"!";
+      form.hidden=true;success.style.display="block";
+      success.scrollIntoView({behavior:(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)?"auto":"smooth",block:"center"});
+    });
+  })();
+</script>
+</body>
+</html>
