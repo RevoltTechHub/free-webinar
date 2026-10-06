@@ -103,5 +103,25 @@
     </div>
     <div class="foot"><span>revolttechhub.github.io/free-webinar</span><span>@revolt_technology</span></div>
   </div>
+
+  <button id="dl" data-html2canvas-ignore
+    style="position:fixed;top:16px;right:16px;z-index:99;font-family:var(--fb);font-weight:700;font-size:15px;
+    border:none;cursor:pointer;background:#22C35E;color:#08270f;padding:12px 18px;border-radius:999px;box-shadow:0 8px 20px -6px rgba(0,0,0,.6)">
+    ⬇ Download 1080×1350 PNG
+  </button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    document.getElementById('dl').addEventListener('click',function(){
+      var btn=this,old=btn.textContent;btn.textContent='Rendering…';
+      html2canvas(document.querySelector('.stage'),{scale:2,width:1080,height:1350,backgroundColor:'#0A1222',useCORS:true}).then(function(canvas){
+        canvas.toBlob(function(blob){
+          var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+          a.download='revolt-free-webinar-10oct.png';document.body.appendChild(a);a.click();
+          setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);
+          btn.textContent=old;
+        },'image/png');
+      }).catch(function(){btn.textContent='Try again';});
+    });
+  </script>
 </body>
 </html>
